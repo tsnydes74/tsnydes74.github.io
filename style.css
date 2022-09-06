@@ -1,59 +1,92 @@
-body,html{
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-header{
-    width: 100%;
-    height: 70px;
-    background-color: rgb(103, 169, 170);
+a,a:hover{
+    text-decoration: none;
 }
-
-h1{
-    position: absolute;
-    padding: 3px;
-    float: left;
-    margin-left: 2%;
-    margin-top: 10px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: beige;
-}
-
-span{
-    color: yellow;
-}
-
 
 ul{
-        width: auto;
-        float: right;
-        margin-top: 8px;
+    list-style: none;
 }
 
-li{
-    display: inline-block;
-    padding: 15px 30px;
-}
-
-a{
-    text-align: center;
-    color: yellow;
-    text-decoration: none;
-    font-family: 'Open Sans' sans-serif;
-    font-size: 1.2vw;
-}
-
-a:hover{
-    color: rgb(216, 206, 189);
-    transition: 0.5s;
-}
-
-img{
+.header{
+    position: relative;
     width: 100%;
-    margin-top: -16px;
+    height: 150vh;
+    background-image: url("images/background test.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 
-.active{
-    background-color: yellow;
+.header .navbar{
+    width: 100%;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+.a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.header .navbar a{
+    color: black;
+    font-size: 30px;
+    margin-left: 45px;
+}
+
+.header .navbar .menu ul{
+    margin-left: 192px;
+}
+
+.header .navbar .menu ul li{
+    display: inline-block;
+    margin-right: 30px;
+    align-items: center;
+}
+
+.header .navbar .menu ul li a{
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.header .contact-info{
+    margin-left: 20px;
+}
+
+.header .contact-info ul{
+    margin-left: 30px;
+}
+
+.header .contact-info ul li{
+    display: inline-block;
+}
+
+.resSum{
+    background-color: bisque;
+    display: block;
+    position: relative;
+    top: 10vh;
+    left: 5vw;
+    width: 40vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+
+}
+
+p1.ital{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
 }
 
